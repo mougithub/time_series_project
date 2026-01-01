@@ -1,2 +1,3 @@
 This project analyzes and forecasts daily electricity demand for six major U.S. power system operators using classical time-series models.  
 The emphasis is not only on point forecasting accuracy, but on **forecast uncertainty, peak-demand risk, and model robustness**, which are central to real-world operational and financial risk management.
+Forecasting and risk analysis are intentionally separated into distinct modules. The forecasting layer handles model fitting and validation, while the risk layer operates exclusively on forecast outputs to quantify uncertainty, tail risk, and stress scenarios, reflecting industry best practices in model governance.
