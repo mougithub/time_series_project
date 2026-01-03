@@ -6,8 +6,10 @@ The goal was utilizing a dataset containing 10,961 daily records spanning a five
 4. PJM Interconnection, LLC (PJM)
 5. Southern Company Services, Inc. Trans (SOCO)
 6. Tennessee Valley Authority (TVA)
+
 and generate short-term forecasts for each operator's future electricity demand. Exploratory Data Analysis (EDA) confirmed a strong weekly seasonal pattern, with demand consistently dropping on weekends. PJM Interconnection, LLC exhibits the highest average demand, with different overall magnitudes among
 operators.
+
 In order to predict future demand, firstly I used the Seasonal Autoregressive Integrated Moving Average (SARIMA) modeling approach, classifying all series as stationary. Although this manual model was successful in capturing the weekly seasonality and observable trend, the resulting projections showed poor
 predictive accuracy.
 Then I used ARIMA, ETS(Error, Trend, Seasonality) and SARIMA(auto.arima()) methods and then predicted the peak values.
